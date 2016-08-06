@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="row commentArea">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            
+            <a class="buttonBack" href="#/suggestions"><span class="glyphicon glyphicon-chevron-left"></span>Back</a>
+
+            <h1 class="commentTitle">{{post.title}}</h1>
+
+            <div class="comment" ng-repeat="comment in post.comments">
+                <p class="commentBody">{{comment.body}}</p>
+                <p id="upvotes">
+                    <span class="glyphicon glyphicon-plus-sign" ng-click="upVote(comment)"></span> Upvotes: {{comment.upvotes}}
+                </p>
+            </div>
+
+            <form ng-submit="addComment()" style="margin-top: 50px">
+                <h3 class="submit"> Submit Your Comment </h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Comment" ng-model="body"/>
+                </div>
+                <button type="submit" class="btn btn-primary">Comment</button>
+            </form>
+            
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>

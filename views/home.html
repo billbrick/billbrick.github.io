@@ -1,0 +1,39 @@
+<div class="container">
+    
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="logotitle"><img src="../img/lightbulb.png" class="logo"/><h1 class="title"><em>Suggestion Box</em></h1></div>
+            
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    
+    <div class="row" ng-repeat="post in posts | orderBy:'-upvotes'">
+        <div class="col-md-3"></div>
+        <div class="col-md-6 suggestion">
+            <h1 class="suggestionTitle">{{post.title}}</h1>
+            <p id="upvotes">
+                <span class="glyphicon glyphicon-plus-sign upvoteGlyph" ng-click="upVote(post)"></span> Upvotes: {{post.upvotes}} | 
+                <a href="#/suggestion/{{$index}}" id="commentsLink">Comments</a>
+            </p>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+    
+    <div class="row submitSection">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <form ng-submit="addSuggestion()" style="margin-top: 50px">
+                <h3 class="submit"> Submit Your Suggestion </h3>
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Great ideas here" ng-model="title"/>
+                </div>
+                <button type="submit" class="btn btn-primary submitButton">Suggest</button>
+            </form>
+        </div>
+        <div class="col-md-3"></div>
+    </div>
+</div>
+
+

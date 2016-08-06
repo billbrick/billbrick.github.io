@@ -1,0 +1,87 @@
+body {
+    background-color: #272A33;
+    font-family: 'Lato'
+}
+
+.logo {
+    width: 5em;
+    height: 5em;
+    margin-bottom: 2em;
+    margin-right: 1em;
+}
+
+.suggestionTitle {
+    color: white;
+}
+
+.logotitle {
+    border-bottom: 2px solid white;
+}
+
+.suggestion {
+    border-bottom: 1px solid white;
+    padding-bottom: 10px
+}
+
+.title {
+    font-size: 60px;
+    color: #6ECCE0;
+    display: inline-block;
+}
+
+.commentTitle {
+    font-size: 60px;
+    color: #6ECCE0;
+}
+
+.commentArea {
+    padding-top: 20px;
+}
+
+#upvotes {
+    color: white;
+}
+
+.comment {
+    border-bottom: 1px solid grey;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.commentBody {
+    color: white;
+    font-size: 25px;
+}
+
+#commentsLink {
+    color: #6ECCE0;
+    text-decoration: none;
+}
+
+.submit {
+    color: #6ECCE0;
+    
+}
+
+.submitSection {
+    padding-bottom: 40px;
+}
+
+.buttonBack {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.buttonBack:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.submitButton {
+    border-radius: 0px;
+}
+
+.upvoteGlyph {
+    color: #28FB43;
+}
